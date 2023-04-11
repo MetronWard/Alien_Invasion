@@ -223,7 +223,6 @@ class AlienInvasion:
             pygame.mouse.set_visible(False)
 
 
-
 if __name__ == '__main__':
     ai = AlienInvasion()
     ai.run_game()
