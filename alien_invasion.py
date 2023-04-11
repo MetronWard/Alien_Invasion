@@ -222,6 +222,11 @@ class AlienInvasion:
             self.sb.prep_ship()
             pygame.mouse.set_visible(False)
 
+    def _store_scores(self):
+        information = self.stats.score
+        with open('scores.txt', mode='a') as txt_file:
+            txt_file.write(f"{information},")
+
 
 if __name__ == '__main__':
     ai = AlienInvasion()
